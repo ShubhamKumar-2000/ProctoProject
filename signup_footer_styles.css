@@ -1,0 +1,29 @@
+/* Footer styles */
+footer {
+    background-color: #0c111b;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content_signup {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links_signup a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Style links on hover */
+.footer-links_signup a:hover {
+    text-decoration: underline;
+}

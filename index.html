@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Disney+ (Responsive) </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+  <nav class="navbar_big">
+    <img src="images/logo.png" class="brand-logo" alt="" />
+    <ul class="nav-links">
+      <li class="nav-items"><a href="#">TV</a></li>
+      <li class="nav-items"><a href="Movies_page.html">movies</a></li>
+      <li class="nav-items"><a href="#">categories</a></li>
+      <li class="nav-items"><a href="#">premium</a></li>
+    </ul>
+
+    <div class="right-container">
+      <input type="text" class="search-box" placeholder="search" />
+      <button class="sub-btn">subscribe</button>
+      <a href="signup.html" class="login-link">signup/login</a>
+    </div>
+
+    <!-- collapsed nav -->
+    <div class="collapsed_navbar">
+      <nav class="navbar navbar-dark bg-blue fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <button class="btn btn-success nav_btn" type="submit">Subscribe</button>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <form class="d-flex mt-3 nav_bar_search_btn" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-success nav_btn" type="submit">Search</button>
+              </form>
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">TV</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Movies_page.html">Movies</a>
+                </li>
+                
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Categories
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Sci-Fi</a></li>
+                    <li><a class="dropdown-item" href="#">Comedy</a></li>
+                    <li><a class="dropdown-item" href="#">Drama</a></li>
+                    <li><a class="dropdown-item" href="#">Sports</a></li>
+                    <li><a class="dropdown-item" href="#">Documentry</a></li>
+                    <li><a class="dropdown-item" href="#">Sitcom</a></li>
+                    <li><a class="dropdown-item" href="#">Kids</a></li>
+                    <li><a class="dropdown-item" href="#">Family</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="signup.html">Log-in / Sign-up</a>
+                </li>
+
+              </ul>
+              
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </nav>
+
+  <!-- carousel start -->
+  <div class="carousel_manage">
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/Elemental.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Elemental</h5>
+            <p>Fire elements Bernie and Cinder Lumen immigrate to Element City where they face xenophobia from other elements. 
+              After the birth of their daughter Ember, they build a convenience store called the Fireplace and set up a Blue Flame which represents their traditions</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/raya.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Raya and The Last Dragon</h5>
+            <p>The prosperous sub-continent of Kumandra is ravaged by the Druun, mindless spirits that turn every living thing in their path to stone. Sisu, the last surviving dragon, 
+              concentrates her magic into a gem and blasts the Druun away, reviving Kumandra's people but not its dragons. </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/secret_invasion_pic2.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Marvel's Secret Invasion</h5>
+            <p>Nick Fury works with Talos, a shapeshifting alien Skrull, 
+              to uncover a conspiracy by a group of renegade Skrulls led by Gravik who plan to gain control of Earth by posing as different humans around the world.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/slider 2.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>The Falcon and the Winter Soldier</h5>
+            <p>Following the events of 'Avengers: Endgame,' Sam Wilson/Falcon and Bucky 
+              Barnes/Winter Soldier team up in a global adventure that tests their abilities -- and their patience.</p>
+          </div>
+        </div>
+        
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- carousel end -->
+
+ <!-- video cards starts -->
+
+  <div class="video-card-container">
+    <div class="video-card">
+      <img src="images/disney.png" class="video-card-image" alt="" />
+      <video src="videos/disney.mp4" muted loop class="card-video"></video>
+    </div>
+    <div class="video-card">
+      <img src="images/pixar.png" class="video-card-image" alt="" />
+      <video src="videos/pixar.mp4" muted loop class="card-video"></video>
+    </div>
+    <div class="video-card">
+      <img src="images/marvel.png" class="video-card-image" alt="" />
+      <video src="videos/marvel.mp4" muted loop class="card-video"></video>
+    </div>
+    <div class="video-card">
+      <img src="images/star-wars.png" class="video-card-image" alt="" />
+      <video src="videos/star-war.mp4" muted loop class="card-video"></video>
+    </div>
+    <div class="video-card">
+      <img src="images/geographic.png" class="video-card-image" alt="" />
+      <video src="videos/geographic.mp4" muted loop class="card-video"></video>
+    </div>
+  </div>
+
+  <!-- video cards ends -->
+
+  <h1 class="title">Recommended For You</h1>
+  <div class="movies-list">
+    <button class="pre-btn" title="btn">
+      <img src="images/pre.png" alt="" />
+    </button>
+    <button class="nxt-btn" title="btn">
+      <img src="images/nxt.png" alt="" />
+    </button>
+    <div class="card-container">
+      <div class="card">
+        <img src="images/poster 1.png" class="card-img" alt="" />
+        <div class="card-body">
+          <h2 class="name">Loki</h2>
+          <h6 class="des">Lorem ipsum dolor sit amet.</h6>
+          <button class="watchlist-btn">add to watchlist</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/poster 2.png" class="card-img" alt="" />
+        <div class="card-body">
+          <h2 class="name">Mulan</h2>
+          <h6 class="des">Lorem ipsum dolor sit amet.</h6>
+          <button class="watchlist-btn">add to watchlist</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/poster 3.png" class="card-img" alt="" />
+        <div class="card-body">
+          <h2 class="name">The Falcon and The Winter Soldier</h2>
+          <h6 class="des">Lorem ipsum dolor sit amet.</h6>
+          <button class="watchlist-btn">add to watchlist</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/poster 4.png" class="card-img" alt="" />
+        <div class="card-body">
+          <h2 class="name">Avengers: Endgame</h2>
+          <h6 class="des">Lorem ipsum dolor sit amet.</h6>
+          <button class="watchlist-btn">add to watchlist</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/poster 5.png" class="card-img" alt="" />
+        <div class="card-body">
+          <h2 class="name">Thor Ragnarok</h2>
+          <h6 class="des">Lorem ipsum dolor sit amet.</h6>
+          <button class="watchlist-btn">add to watchlist</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/poster 6.png" class="card-img" alt="" />
+        <div class="card-body">
+          <h2 class="name">Movie Name</h2>
+          <h6 class="des">Lorem ipsum dolor sit amet.</h6>
+          <button class="watchlist-btn">add to watchlist</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/poster 7.png" class="card-img" alt="" />
+        <div class="card-body">
+          <h2 class="name">Movie Name</h2>
+          <h6 class="des">Lorem ipsum dolor sit amet.</h6>
+          <button class="watchlist-btn">add to watchlist</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/poster 8.png" class="card-img" alt="" />
+        <div class="card-body">
+          <h2 class="name">Movie Name</h2>
+          <h6 class="des">Lorem ipsum dolor sit amet.</h6>
+          <button class="watchlist-btn">add to watchlist</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/poster 9.png" class="card-img" alt="" />
+        <div class="card-body">
+          <h2 class="name">Movie Name</h2>
+          <h6 class="des">Lorem ipsum dolor sit amet.</h6>
+          <button class="watchlist-btn">add to watchlist</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/poster 10.png" class="card-img" alt="" />
+        <div class="card-body">
+          <h2 class="name">Movie Name</h2>
+          <h6 class="des">Lorem ipsum dolor sit amet.</h6>
+          <button class="watchlist-btn">add to watchlist</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/poster 11.png" class="card-img" alt="" />
+        <div class="card-body">
+          <h2 class="name">Movie Name</h2>
+          <h6 class="des">Lorem ipsum dolor sit amet.</h6>
+          <button class="watchlist-btn">add to watchlist</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/poster 12.png" class="card-img" alt="" />
+        <div class="card-body">
+          <h2 class="name">Movie Name</h2>
+          <h6 class="des">Lorem ipsum dolor sit amet.</h6>
+          <button class="watchlist-btn">add to watchlist</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h1 class="title">Popular Shows</h1>
+  <div class="movies-list">
+    <button class="pre-btn" title="btn">
+      <img src="images/pre.png" alt="" />
+    </button>
+    <button class="nxt-btn" title="btn">
+      <img src="images/nxt.png" alt="" />
+    </button>
+    <div class="card-container">
+      <div class="card">
+        <img src="images/poster 12.png" class="card-img" alt="" />
+        <div class="card-body">
+          <h2 class="name">movie name</h2>
+          <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+          <button class="watchlist-btn">add to watchlist</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/poster 11.png" class="card-img" alt="" />
+        <div class="card-body">
+          <h2 class="name">movie name</h2>
+          <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+          <button class="watchlist-btn">add to watchlist</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/poster 10.png" class="card-img" alt="" />
+        <div class="card-body">
+          <h2 class="name">movie name</h2>
+          <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+          <button class="watchlist-btn">add to watchlist</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/poster 9.png" class="card-img" alt="" />
+        <div class="card-body">
+          <h2 class="name">movie name</h2>
+          <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+          <button class="watchlist-btn">add to watchlist</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/poster 8.png" class="card-img" alt="" />
+        <div class="card-body">
+          <h2 class="name">movie name</h2>
+          <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+          <button class="watchlist-btn">add to watchlist</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/poster 7.png" class="card-img" alt="" />
+        <div class="card-body">
+          <h2 class="name">movie name</h2>
+          <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+          <button class="watchlist-btn">add to watchlist</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/poster 6.png" class="card-img" alt="" />
+        <div class="card-body">
+          <h2 class="name">movie name</h2>
+          <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+          <button class="watchlist-btn">add to watchlist</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/poster 5.png" class="card-img" alt="" />
+        <div class="card-body">
+          <h2 class="name">movie name</h2>
+          <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+          <button class="watchlist-btn">add to watchlist</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/poster 4.png" class="card-img" alt="" />
+        <div class="card-body">
+          <h2 class="name">movie name</h2>
+          <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+          <button class="watchlist-btn">add to watchlist</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/poster 3.png" class="card-img" alt="" />
+        <div class="card-body">
+          <h2 class="name">movie name</h2>
+          <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+          <button class="watchlist-btn">add to watchlist</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/poster 2.png" class="card-img" alt="" />
+        <div class="card-body">
+          <h2 class="name">movie name</h2>
+          <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+          <button class="watchlist-btn">add to watchlist</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/poster 1.png" class="card-img" alt="" />
+        <div class="card-body">
+          <h2 class="name">movie name</h2>
+          <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+          <button class="watchlist-btn">add to watchlist</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer id="disney-footer">
+    <div class="footer-content">
+        <div class="footer-logo">
+            <img src="images/logo.png" alt="Disney+ Logo">
+        </div>
+        <div class="footer-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Movies_page.html">Movies</a></li>
+                <li><a href="#">Series</a></li>
+                <li><a href="#">Originals</a></li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <a href="https://www.facebook.com/DisneyPlus"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="https://twitter.com/DisneyPlus"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com/disneyplus/"><img src="images/instagram.png" alt="Instagram"></a>
+        </div>
+    </div>
+  </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+  <script src="index.js" async></script>
+</body>
+</html>

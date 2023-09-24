@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <link rel="stylesheet" href="signup_footer_styles.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="Movies_page_style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disney+ Hotstar - Movies</title>
+</head>
+
+<body>
+    <nav class="navbar_big">
+        <img src="images/logo.png" class="brand-logo" alt="" />
+        <ul class="nav-links">
+            <li class="nav-items"><a href="#">TV</a></li>
+            <li class="nav-items"><a href="Movies_page.html">movies</a></li>
+            <li class="nav-items"><a href="#">categories</a></li>
+            <li class="nav-items"><a href="#">premium</a></li>
+        </ul>
+
+        <div class="right-container">
+            <input type="text" class="search-box" placeholder="search" />
+            <button class="sub-btn">subscribe</button>
+            <a href="signup.html" class="login-link">signup/login</a>
+        </div>
+
+        <!-- collapsed nav -->
+        <div class="collapsed_navbar">
+            <nav class="navbar navbar-dark bg-blue fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                        aria-labelledby="offcanvasDarkNavbarLabel">
+                        <div class="offcanvas-header">
+                            <button class="btn btn-success nav_btn" type="submit">Subscribe</button>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <form class="d-flex mt-3 nav_bar_search_btn" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-success nav_btn" type="submit">Search</button>
+                            </form>
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">TV</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Movies</a>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Categories
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-dark">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Sci-Fi</a></li>
+                                        <li><a class="dropdown-item" href="#">Comedy</a></li>
+                                        <li><a class="dropdown-item" href="#">Drama</a></li>
+                                        <li><a class="dropdown-item" href="#">Sports</a></li>
+                                        <li><a class="dropdown-item" href="#">Documentry</a></li>
+                                        <li><a class="dropdown-item" href="#">Sitcom</a></li>
+                                        <li><a class="dropdown-item" href="#">Kids</a></li>
+                                        <li><a class="dropdown-item" href="#">Family</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="signup.html">Log-in / Sign-up</a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </nav>
+
+    <!-- Carousel starts -->
+    
+    
+    <div class="carousel-container">
+        <div class="carousel">
+        </div>
+    </div>
+
+    <!-- Carousel ends -->
+
+    <!-- movie cards slides starts here -->
+
+    <h1 class="title">Recommended For You</h1>
+  <div class="movies-list">
+    <button class="pre-btn" title="btn">
+      <img src="images/pre.png" alt="" />
+    </button>
+    <button class="nxt-btn" title="btn">
+      <img src="images/nxt.png" alt="" />
+    </button>
+    <div class="card-container">
+      <div class="card">
+        <img src="images/avatar.png" class="card-img" alt="" />
+        <div class="card-body">
+          <h2 class="name">Avatar</h2>
+          <h6 class="des">Lorem ipsum dolor sit amet.</h6>
+          <button class="watchlist-btn">add to watchlist</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/poster 2.png" class="card-img" alt="" />
+        <div class="card-body">
+          <h2 class="name">Mulan</h2>
+          <h6 class="des">Lorem ipsum dolor sit amet.</h6>
+          <button class="watchlist-btn">add to watchlist</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/Batman.png" class="card-img" alt="" />
+        <div class="card-body">
+          <h2 class="name">The Batman</h2>
+          <h6 class="des">Lorem ipsum dolor sit amet.</h6>
+          <button class="watchlist-btn">add to watchlist</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/poster 4.png" class="card-img" alt="" />
+        <div class="card-body">
+          <h2 class="name">Avengers: Endgame</h2>
+          <h6 class="des">Lorem ipsum dolor sit amet.</h6>
+          <button class="watchlist-btn">add to watchlist</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/poster 5.png" class="card-img" alt="" />
+        <div class="card-body">
+          <h2 class="name">Thor Ragnarok</h2>
+          <h6 class="des">Lorem ipsum dolor sit amet.</h6>
+          <button class="watchlist-btn">add to watchlist</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/poster 6.png" class="card-img" alt="" />
+        <div class="card-body">
+          <h2 class="name">Movie Name</h2>
+          <h6 class="des">Lorem ipsum dolor sit amet.</h6>
+          <button class="watchlist-btn">add to watchlist</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/poster 7.png" class="card-img" alt="" />
+        <div class="card-body">
+          <h2 class="name">Movie Name</h2>
+          <h6 class="des">Lorem ipsum dolor sit amet.</h6>
+          <button class="watchlist-btn">add to watchlist</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/poster 8.png" class="card-img" alt="" />
+        <div class="card-body">
+          <h2 class="name">Movie Name</h2>
+          <h6 class="des">Lorem ipsum dolor sit amet.</h6>
+          <button class="watchlist-btn">add to watchlist</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/poster 9.png" class="card-img" alt="" />
+        <div class="card-body">
+          <h2 class="name">Movie Name</h2>
+          <h6 class="des">Lorem ipsum dolor sit amet.</h6>
+          <button class="watchlist-btn">add to watchlist</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/poster 10.png" class="card-img" alt="" />
+        <div class="card-body">
+          <h2 class="name">Movie Name</h2>
+          <h6 class="des">Lorem ipsum dolor sit amet.</h6>
+          <button class="watchlist-btn">add to watchlist</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/poster 11.png" class="card-img" alt="" />
+        <div class="card-body">
+          <h2 class="name">Movie Name</h2>
+          <h6 class="des">Lorem ipsum dolor sit amet.</h6>
+          <button class="watchlist-btn">add to watchlist</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/poster 12.png" class="card-img" alt="" />
+        <div class="card-body">
+          <h2 class="name">Movie Name</h2>
+          <h6 class="des">Lorem ipsum dolor sit amet.</h6>
+          <button class="watchlist-btn">add to watchlist</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- movie slides ends here -->
+
+  <!-- footer starts here -->
+  <footer id="disney-footer">
+    <div class="footer-content">
+        <div class="footer-logo">
+            <img src="images/logo.png" alt="Disney+ Logo">
+        </div>
+        <div class="footer-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">Series</a></li>
+                <li><a href="#">Originals</a></li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <a href="https://www.facebook.com/DisneyPlus"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="https://twitter.com/DisneyPlus"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com/disneyplus/"><img src="images/instagram.png" alt="Instagram"></a>
+        </div>
+    </div>
+  </footer>
+<!-- footer ends here -->
+
+    <script src="Movies_script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</body>
+
+</html>
