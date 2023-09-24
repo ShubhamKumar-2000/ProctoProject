@@ -74,7 +74,13 @@ body {
   border-color: #1f80e0;
 }
 
-@media(max-width: 1024px){
+@media(max-width: 1150px){
+  .search-box:focus{
+    width: 350px;
+  }
+}
+
+@media(max-width: 1090px){
   .search-box:focus{
     width: 300px;
   }
@@ -107,7 +113,7 @@ body {
   display: none;
 }
 
-@media(max-width: 880px){
+@media(max-width: 1030px){  
   .nav-items{
     display: none;
   }
@@ -115,6 +121,7 @@ body {
   .collapsed_navbar{
     display: block;
   }
+
   .offcanvas-body{
     background-color: rgb(12, 17, 27);
   }
@@ -172,14 +179,14 @@ body {
 
 @media(max-width: 48rem){
 	.carousel{
-		height: 30rem;
+		height: 15rem;
 		padding: 2rem 2rem;
 	}
 }
 
 @media(max-width: 25rem){
 	.carousel{
-		height: 20rem;
+		height: 100%;
 	}
 }
 
@@ -515,4 +522,10 @@ body {
 
 .footer-social img {
   width: 20px;
+}
+
+@media(max-width: 600px) {
+  .footer-social{
+    display: none;
+  }
 }
